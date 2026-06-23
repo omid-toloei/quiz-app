@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Quiz app</title>
+  </head>
+  <body>
+    <main>
+      <section class="guide-section">
+        <h1>Quiz app</h1>
+        <h3>
+          Please note that all questions are multiple-choice.
+          You have only 30 seconds to answer each question.
+          Once the time is up, you will not be able to return to the previous question.
+          The quiz will start immediately after you click the "Start Quiz" button
+        </h3>
+        <button id="startQuizBtn">Start Quiz</button>
+      </section>
+      <section class="questions-section">
+        <div class="header">
+          <p id="showTime">00:<span id="timeRemaining">30</span></p>
+          <h2 id="showQuestionH2"></h2>
+        </div>
+        <div class="answers-btn">
+          <button id="showOption1"></button>
+          <button id="showOption2"></button>
+          <button id="showOption3"></button>
+          <button id="showOption4"></button>
+        </div>
+        <div id="showQuestionsLeft">
+          <p><span id="numOfQuestionsLeft">1</span> / <span id="numOfAllQuestions"></span></p>
+        </div>
+      </section>
+      <section class="result-section">
+        <div class="show-score">
+          <p>Your score:</p>
+          <h2 class="score"></h2>
+          <p id="appMessageAboutScore"></p>
+        </div>
+      </section>
+    </main>
+    <script src="javascript/app.js"></script>
+  </body>
+</html>
